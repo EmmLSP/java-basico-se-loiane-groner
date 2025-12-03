@@ -16,11 +16,10 @@ public class Exer07 {
 		for (int i = 0; i < 5; i++) {
 			System.out.println("Entre com o " + (i + 1) + " numero:");
 			num = scan.nextInt();
-			System.out.print("[");
 			if (i < 5 - 1)
 				numeros +=  num + ", ";
 			else
-				numeros +=  num + "]";
+				numeros +=  num + "";
 			if (num > maior) {
 				maior = num;
 			}
