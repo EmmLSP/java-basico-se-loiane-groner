@@ -39,16 +39,12 @@ public class Exer21 {
 		}
 		
 		media = soma / turmas;
-		anos = (int) media;
-		meses = ((media - ((int) media)) * 12);
-		mesesInt =  String.format("%.0f", meses);
 		
 		System.out.println("Alunos por Turma:");
 		System.out.println("-----------------");
 		System.out.print(alunosTurma);
 		System.out.println("-----------------");
 		System.out.println("Media de alunos por turma: " + String.format("%.2f", media));
-		System.out.println(anos + " anos e " + mesesInt + " meses.");
 	}
 
 }
