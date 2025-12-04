@@ -1,5 +1,6 @@
 package com.loiane.javabasico.aula17.labs;
 
+import java.text.DecimalFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -10,6 +11,8 @@ public class Exer31 {
 		Locale.setDefault(Locale.US);
 		
 		Scanner scan = new Scanner(System.in);
+		
+		DecimalFormat format = new DecimalFormat("###,###.##");
 		
 		System.out.println("Entre com o ano atual:");
 		int anoAtual = scan.nextInt();
@@ -28,7 +31,7 @@ public class Exer31 {
 			percentual *= 2;
 			salario += (salario * (percentual) / 100);
 			System.out.print("ano " + ano + " - salario R$ " + String.format("%.2f", salario));
-			System.out.println(" - percenutal atual: " + percentual);
+			System.out.println(" - percenutal atual: " + percentual+ "%");
 			ano++;
 		}
 		
@@ -45,8 +48,8 @@ public class Exer31 {
 		for (int i = 1997; i <= anoAtual; i++) {
 			percentual *= 2;
 			salario += (salario/100) * percentual;
-			System.out.print("ano " + i + " - salario R$ " + salario);
-			System.out.println(" - percenutal: " + percentual);
+			System.out.print("ano " + i + " - salario R$ " + format.format(salario));
+			System.out.println(" - percenutal: " + percentual+ "%");
 		}
 	}
 
