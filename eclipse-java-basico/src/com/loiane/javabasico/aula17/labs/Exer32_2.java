@@ -20,7 +20,7 @@ public class Exer32_2 {
 			
 			if (cod == 0 && qtd == 0) {
 				naoTerminar = false;
-				output += "Total a pagar = " + total;
+				output += "Total a pagar    = " + total;
 			} else {
 				System.out.println("----------------------------------");
 				System.out.println("Especificacao    codigo    Preco");
