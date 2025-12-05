@@ -8,7 +8,7 @@ public class BreakAndContinue {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		/*System.out.println("Entre com um numero:");
+		System.out.println("Entre com um numero:");
 		int num = scan.nextInt();
 		
 		System.out.println("Entre com um limite:");
@@ -20,11 +20,11 @@ public class BreakAndContinue {
 				System.out.println("O valor de i = " + i);
 				break;
 			}
-		}*/
+		}
 		
 		// rotulo -> goto - usado para fazer loop com linguagem de baixo nivel como assembly
 		
-		/*for (int i = 0; i <= 4; i++) {
+		for (int i = 0; i <= 4; i++) {
 			rotulo1: {
 				rotulo2: {
 					rotulo3: {
@@ -44,25 +44,22 @@ public class BreakAndContinue {
 				System.out.println("rotulo1");
 			}
 			System.out.println(i);
-		}*/
+		}
 		
 		// Continue - ignora tudo abaixo dele, retorna para inicio do loop
 		
 		System.out.println("Entre com um numero:");
-		int num = scan.nextInt();
+		num = scan.nextInt();
 		
 		System.out.println("Entre com um limite:");
-		int max = scan.nextInt();
+		max = scan.nextInt();
 		
 		for (int i = num; i <= max; i++) {
 			if (i % 7 == 0) {
 				continue;
 			}
 			System.out.println("O valor de i = " + i);
-		}
-		
-		
-		
+		}	
 	}
 
 }
