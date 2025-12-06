@@ -10,7 +10,7 @@ public class Exer15 {
 		
 		int[] vetorA = new int[10];
 		int par = 0, impar;
-		int porcPar, porcImpar;
+		double porcPar, porcImpar;
 
 		for (int i = 0; i < vetorA.length; i++) {
 			System.out.println("Entre com o valor da posicao " + i);
